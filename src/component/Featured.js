@@ -42,7 +42,7 @@ export default function Featured() {
       <div className="flex items-center relative inline-block bg-orange-900">
 
         <button onKeyDown={(e)=> {if(e.key === 'ArrowLeft') prevSlide()}} onClick={prevSlide}><img src='/img/arrowl.png' alt='images' height={40} width={40} className=" hover:bg-white/5 active:bg-white/10 hover:rounded-xl backdrop-blur-none h-20 w-20 z-[50] absolute left-0 top-[42%] " /></button>
-        <Image src={images[current]} alt='images' height={1100} width={1100}  className="contrast-120 h-[90vh] w-[100vw] md:h-[1fr] md:1fr block "/>
+        <Image src={images[current]} alt='Delicious Lamao Pizza' height={1100} width={1100}  className="contrast-120 h-[90vh] w-[100vw] md:h-[1fr] md:1fr block "/>
         <button onKeyDown={(e)=> {if(e.key === 'ArrowRight') nextSlide()}} onClick={nextSlide}><img src='/img/arrowr.png' alt='images' height={40} width={40} className="hover:bg-white/5 active:bg-white/10 hover:rounded-xl backdrop-blur-none h-20 w-20 z-[50] absolute right-0 top-[42%] "/></button>
         
         <div className=" absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
