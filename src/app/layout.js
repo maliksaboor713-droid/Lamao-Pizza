@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Lamao Pizza",
-  description: "Order delicious pizza from Lamao Pizza.",
+  description: "Lamao Pizza serves delicious, freshly made pizza with easy online ordering. Explore our menu and order your favorite pizza today.",
   verification: {
     google: "gcgKMb6l5xFfXFI2Wd7eLpSIaK8EgQVQB-rdut_293k",
   },
