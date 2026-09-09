@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function PizzaCard({ pizza }) {
+  if (!pizza) {
+    return null; // or a loading/error UI
+  }
   return (
     <>
     <Link href={`/PizzaCard/${pizza.id}`} className="bg-orange-700 flex flex-col justify-center items-center p-2 rounded-[10px] outline-5 outline-offset-5 outline-orange-800 shadow-lg shadow-blue-900/50 ">
