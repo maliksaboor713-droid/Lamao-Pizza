@@ -18,7 +18,7 @@ export default function Footer() {
     </div>
       </div>
       <div className="h-12 bg-orange-900 text-white text-[1.2rem] text-center content-center border-t border-t-black">
-        <p>© 2026 Your Company. All rights reserved.</p>
+        <p>© 2026 Lamao Pizza. All rights reserved.</p>
       </div>
     </footer>
     </>

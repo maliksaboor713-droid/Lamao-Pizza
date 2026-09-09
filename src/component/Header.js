@@ -14,10 +14,10 @@ export default function Header() {
 
         <div className=" min-sm:text-[1rem] h-[50px] w-150 flex justify-between items-center text-[5rem] text-white border rounded-[6px] overflow-hidden outline-2 outlineline-offset-1 outline-orange-200 ">
           <Link href='/' className=" min-sm:hidden max-sm:hidden md:block hover:bg-orange-800 p-7 text-[1.5rem]">Home</Link>
-          <Link href='#' className=" max-sm:hidden max-sm:hidden  hover:bg-orange-800 p-7 text-[1.5rem] ">About</Link>
+          {/* <Link href='#' className=" max-sm:hidden max-sm:hidden  hover:bg-orange-800 p-7 text-[1.5rem] ">About</Link> */}
         <Image src='/img/logo.png' height={120} width={120} alt='Logo' className=' bg-black border rounded-full border-blue-800 hover:bg-blue-900 active:bg-blue-800'></Image> 
-          <Link href='/product' className=" min:sm:p-1 max-sm:p-2 max-md:p-4 hover:bg-orange-800 p-3 text-[1.5rem] ">Products</Link>
-          <Link href='#' className=" min:sm:p-1 max-sm:p-2 max-md:p-4 hover:bg-orange-800 p-3 text-[1.5rem] ">Services</Link>
+          <Link href='/product' className=" min:sm:p-1 max-sm:p-2 max-md:p-4 hover:bg-orange-800 p-3 text-[1.5rem] ">Menu</Link>
+          {/* <Link href='#' className=" min:sm:p-1 max-sm:p-2 max-md:p-4 hover:bg-orange-800 p-3 text-[1.5rem] ">Services</Link> */}
         </div>
 
         <Link href='/cart' className=" text-center content-center hover:(bg-blue-200 text-black border-blue-400)">
