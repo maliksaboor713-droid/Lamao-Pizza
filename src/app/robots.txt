@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lamao-pizza.vercel.app/sitemap.xml
