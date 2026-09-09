@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Featured from "../component/Featured";
-import Pizzalist from "../component/Pizzalist";
+// import Pizzalist from "../component/Pizzalist";
+import PizzaCard from "./PizzaCard/page";
+import { pizzas } from "@/dataLib/pizzaCard";
+import { pizzaData } from "@/dataLib/pizzaCard";
 
 export default function Home() {
   return (
-    <>
+    <main className="flex min-h-screen flex-col items-center justify-between bg-gray-100">
     <Featured />
 
-    <div className='h-[1fr] m-25 gap-10 text-center text-balance flex flex-col justify-around items-center'>
+    <div className='h-[1fr] mt-10 gap-5 text-center text-balance flex flex-col justify-around items-center'>
     <div >
       <h1 className='text-[2rem]  font-(900)'>Delicious Pizza at Lamao Pizza</h1>
       <p className='text-[1.2rem] font-(900)'>Our website offers and sell almost all type of amazing flavoured pizza</p>
@@ -26,8 +29,12 @@ export default function Home() {
     </div>
     </div>
 
-    <Pizzalist />
+    <div className="grid grid grid-cols-4 gap-10 m-10 my-25 ">
+      {pizzas.map((pizza) => (
+        <PizzaCard key={pizza.id} pizza={pizza} />
+      ))}
+    </div>
 
-    </>
+    </main>
   );
 }
